@@ -1,11 +1,11 @@
+# Descriptografar Secrets e Chaves SSH do Jenkins
 
-Aqui está o texto ajustado com quebras de linha e uma melhor organização para o README do GitHub:
+Este script Groovy possibilita o **decrypt** dos secrets do Jenkins. Além de descriptografar os secrets, ele também faz o decrypt de **chaves SSH**, caso existam.
 
-Descriptografar Secrets e Chaves SSH do Jenkins
-Este script Groovy possibilita o decrypt dos secrets do Jenkins. Além de descriptografar os secrets, ele também faz o decrypt de chaves SSH caso estejam presentes.
+## Passo a passo
 
-Passo a passo
-Acesse o diretório /script/, caso o acesso esteja habilitado.
-Como alternativa ao /script/, é possível acessar o host "Master" e abrir o prompt de comandos Groovy.
-Copie e cole o script no console.
-Ao final, será gerada uma saída em texto claro, com quebra de linha organizada.
+1. Acesse o diretório `/script/`, caso esteja habilitado.
+2. Como alternativa ao `/script/`, é possível acessar o host **Master** e abrir o prompt de comandos Groovy.
+3. Copie e cole o script no console Groovy.
+
+Será gerada uma saída em **texto claro**, com quebras de linha organizadas.
