@@ -1,4 +1,3 @@
-// Here is a short snippet you can just run from the jenkins script console, to dump all of your credentials to plain text.
 
 com.cloudbees.plugins.credentials.SystemCredentialsProvider.getInstance().getCredentials().forEach{
   it.properties.each { prop, val ->
@@ -8,7 +7,7 @@ com.cloudbees.plugins.credentials.SystemCredentialsProvider.getInstance().getCre
 }
 
 
-// A more complicated version that lists for non-system credential providers:
+// Uma versão mais complicada que lista provedores de credenciais que não são do sistema:
 
 import com.cloudbees.plugins.credentials.CredentialsProvider
 import com.cloudbees.plugins.credentials.Credentials
@@ -39,8 +38,6 @@ Jenkins.get().allItems().collectMany{ CredentialsProvider.lookupStores(it).toLis
 }
 
 
-// For the record, The following snippet to be pasted into the console also does the job :
-
 def creds = com.cloudbees.plugins.credentials.CredentialsProvider.lookupCredentials(
     com.cloudbees.plugins.credentials.common.StandardUsernameCredentials.class,
     Jenkins.instance,
@@ -58,4 +55,4 @@ for(c in creds) {
 }
 
 
-// Source: https://devops.stackexchange.com/questions/2191/how-to-decrypt-jenkins-passwords-from-credentials-xml
+// Referências: https://devops.stackexchange.com/questions/2191/how-to-decrypt-jenkins-passwords-from-credentials-xml
